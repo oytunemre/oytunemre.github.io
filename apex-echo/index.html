@@ -3,44 +3,130 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Apex Echo</title>
+  <title>Apex Echo · Neon tower-climbing jumper</title>
   <meta name="description" content="Apex Echo — a neon tower-climbing jumper with online races for 2–5 players.">
-  <link rel="icon" href="/apex-echo/icon.png">
+  <meta name="theme-color" content="#161826">
+  <link rel="icon" href="/apex-echo/icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="/apex-echo/icon.png">
+  <link rel="alternate" hreflang="en" href="https://oytunemre.github.io/apex-echo/">
   <link rel="alternate" hreflang="tr" href="https://oytunemre.github.io/apex-echo/tr/">
+  <link rel="preload" href="/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/nocturne.css">
   <link rel="stylesheet" href="/style.css">
 </head>
-<body class="app-apex">
-  <header class="top">
-    <a class="back" href="/">‹ All apps</a>
-    <a class="lang" href="/apex-echo/tr/" lang="tr" hreflang="tr">Türkçe</a>
-  </header>
-  <main>
-    <section class="app-head">
-      <img src="/apex-echo/icon.png" alt="Apex Echo icon" width="76" height="76">
-      <div>
-        <p class="app-name">Apex Echo</p>
-        <p class="app-tag">Neon tower-climbing jumper</p>
-        <span class="badge">Coming soon · iPhone</span>
-      </div>
-    </section>
-    <nav class="tabs" aria-label="Apex Echo">
-      <a href="/apex-echo/" aria-current="page">Overview</a>
-      <a href="/apex-echo/privacy/">Privacy</a>
-      <a href="/apex-echo/support/">Support</a>
-    </nav>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <a class="back" href="/"><svg class="i" viewBox="0 0 256 256" width="18" height="18" aria-hidden="true"><path d="M216 128H40M112 56l-72 72 72 72"/></svg>All apps</a>
+      <nav class="lang" aria-label="Language">
+        <a href="/apex-echo/" hreflang="en" aria-current="page">EN</a>
+        <a href="/apex-echo/tr/" hreflang="tr" lang="tr">TR</a>
+      </nav>
+    </header>
 
-    <p class="lead">Jump from platform to platform, chain combos by skipping floors and climb as high as you can before you fall. Race up to 4 friends online on the same tower: the last one standing wins.</p>
+    <main class="tiles">
+      <header class="hero">
+        <span class="deco glow glow-pink g1"></span>
+        <span class="deco glow glow-cyan g2"></span>
+        <span class="deco glow glow-yellow g3"></span>
+        <span class="deco hero-char"></span>
+        <div class="hero-head">
+          <img class="app-icon" src="/apex-echo/icon.png" alt="" width="112" height="112">
+          <span class="status">Coming soon</span>
+        </div>
+        <h1>Apex Echo</h1>
+        <p class="hero-tagline">Neon tower-climbing jumper</p>
+        <p class="hero-lead">Jump from platform to platform, chain combos by skipping floors and climb as high as you can before you fall. Race up to 4 friends online on the same tower: the last one standing wins.</p>
+        <p class="hero-note">Coming soon to the App Store for iPhone. Game language: English.</p>
+        <!-- APP STORE BADGE: at launch, replace the .hero-note line above with Apple's official badge
+             (self-host the SVG next to this page) and drop the "Coming soon" tag.
+        <a class="store-badge" href="APP_STORE_URL"><img src="/apex-echo/app-store-badge.svg" alt="Download on the App Store" width="144" height="48"></a>
+        -->
+        <nav class="tabs" aria-label="Apex Echo">
+          <a href="/apex-echo/" aria-current="page">Overview</a>
+          <a href="/apex-echo/privacy/">Privacy</a>
+          <a href="/apex-echo/support/">Support</a>
+        </nav>
+      </header>
 
-    <ul class="features">
-      <li><strong>Simple controls.</strong> Left, right and JUMP. Hold JUMP to keep jumping.</li>
-      <li><strong>Combos.</strong> Skip several floors in one jump to build a combo.</li>
-      <li><strong>Online races for 2–5 players.</strong> Private rooms with a 6-character code, or Quick Match with players worldwide.</li>
-      <li><strong>Characters and maps.</strong> Unlock them with coins you earn by playing.</li>
-      <li><strong>No account, no ads, no tracking.</strong> Your progress stays on your device.</li>
-    </ul>
+      <!-- SCREENSHOTS: enable when /apex-echo/screens/1.jpg…5.jpg exist
+      <section class="shots" aria-labelledby="shots-title">
+        <h2 class="label" id="shots-title">Screenshots</h2>
+        <div class="shots-strip" role="group" aria-labelledby="shots-title" tabindex="0">
+          <figure class="shot"><div class="shot-frame"><img src="/apex-echo/screens/1.jpg" alt="Main menu" width="1290" height="2796" loading="lazy" decoding="async"></div><figcaption>Main menu</figcaption></figure>
+          <figure class="shot"><div class="shot-frame"><img src="/apex-echo/screens/2.jpg" alt="In game" width="1290" height="2796" loading="lazy" decoding="async"></div><figcaption>In game</figcaption></figure>
+          <figure class="shot"><div class="shot-frame"><img src="/apex-echo/screens/3.jpg" alt="Co-op room" width="1290" height="2796" loading="lazy" decoding="async"></div><figcaption>Co-op room</figcaption></figure>
+          <figure class="shot"><div class="shot-frame"><img src="/apex-echo/screens/4.jpg" alt="Results podium" width="1290" height="2796" loading="lazy" decoding="async"></div><figcaption>Results podium</figcaption></figure>
+          <figure class="shot"><div class="shot-frame"><img src="/apex-echo/screens/5.jpg" alt="Shop" width="1290" height="2796" loading="lazy" decoding="async"></div><figcaption>Shop</figcaption></figure>
+        </div>
+      </section>
+      -->
 
-    <p class="muted">Coming soon to the App Store for iPhone. Game language: English.</p>
-  </main>
-  <footer>© 2026 Oytun Emre Özmel · <a href="mailto:oytunemre.apps@gmail.com">oytunemre.apps@gmail.com</a></footer>
+      <section aria-labelledby="features-title">
+        <h2 class="sr-only" id="features-title">Features</h2>
+        <ul class="features" role="list">
+          <li class="feature">
+            <span class="chip tint-cyan" aria-hidden="true"><svg class="i" viewBox="0 0 256 256" width="24" height="24"><path d="M128 216V40M56 112l72-72 72 72"/></svg></span>
+            <div class="feature-text">
+              <h3>Simple controls</h3>
+              <p>Left, right and JUMP. Hold JUMP to keep jumping.</p>
+            </div>
+          </li>
+          <li class="feature">
+            <span class="chip tint-pink" aria-hidden="true"><svg class="i" viewBox="0 0 256 256" width="24" height="24"><path d="M96 240l16-80-64-24L160 16l-16 80 64 24Z"/></svg></span>
+            <div class="feature-text">
+              <h3>Combos</h3>
+              <p>Skip several floors in one jump to build a combo.</p>
+            </div>
+          </li>
+          <li class="feature">
+            <span class="chip tint-yellow" aria-hidden="true"><svg class="i" viewBox="0 0 256 256" width="24" height="24"><circle cx="88" cy="108" r="52"/><path d="M155.4 57.9A52 52 0 1 1 169.5 160M16 197.4a88 88 0 0 1 144 0M169.5 160a87.9 87.9 0 0 1 72 37.4"/></svg></span>
+            <div class="feature-text">
+              <h3>Online races for 2–5 players</h3>
+              <p>Private rooms with a 6-character code, or Quick Match with players worldwide.</p>
+            </div>
+          </li>
+          <li class="feature">
+            <span class="chip tint-cyan" aria-hidden="true"><svg class="i" viewBox="0 0 256 256" width="24" height="24"><path d="M128 32l22 74 74 22-74 22-22 74-22-74-74-22 74-22Z"/></svg></span>
+            <div class="feature-text">
+              <h3>Characters and maps</h3>
+              <p>Unlock them with coins you earn by playing.</p>
+            </div>
+          </li>
+          <li class="feature">
+            <span class="chip tint-pink" aria-hidden="true"><svg class="i" viewBox="0 0 256 256" width="24" height="24"><path d="M40 114.8V56a8 8 0 0 1 8-8h160a8 8 0 0 1 8 8v58.8c0 84-71.3 111.8-85.5 116.5a7.5 7.5 0 0 1-5 0C111.3 226.6 40 198.9 40 114.8Z"/><path d="m88 128 24 24 56-56"/></svg></span>
+            <div class="feature-text">
+              <h3>No account, no ads, no tracking</h3>
+              <p>Your progress stays on your device.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="dev bg-section" aria-labelledby="dev-title">
+        <div class="dev-side">
+          <span class="mono" aria-hidden="true">OE</span>
+          <h2 class="label" id="dev-title">About the developer</h2>
+        </div>
+        <div class="dev-main">
+          <p>I'm Oytun, a software engineer. I design and build the apps on this page myself, from the app on your phone to the servers behind it. I keep them simple, explain in each app's privacy policy what data it uses, and read and answer support emails myself.</p>
+          <ul class="tags" role="list">
+            <li>Software engineer</li>
+            <li>End to end</li>
+            <li>Personal support</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot foot-app">
+      <span>© 2026 Oytun Emre Özmel</span>
+      <nav aria-label="Footer">
+        <a href="/">Home</a>
+        <a href="/apex-echo/privacy/">Privacy</a>
+        <a href="/apex-echo/support/">Support</a>
+      </nav>
+    </footer>
+  </div>
 </body>
 </html>

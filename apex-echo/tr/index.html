@@ -3,44 +3,130 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Apex Echo</title>
+  <title>Apex Echo · Neon kule tırmanma oyunu</title>
   <meta name="description" content="Apex Echo — 2–5 kişilik online yarışlı neon kule tırmanma oyunu.">
-  <link rel="icon" href="/apex-echo/icon.png">
+  <meta name="theme-color" content="#161826">
+  <link rel="icon" href="/apex-echo/icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="/apex-echo/icon.png">
   <link rel="alternate" hreflang="en" href="https://oytunemre.github.io/apex-echo/">
+  <link rel="alternate" hreflang="tr" href="https://oytunemre.github.io/apex-echo/tr/">
+  <link rel="preload" href="/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/nocturne.css">
   <link rel="stylesheet" href="/style.css">
 </head>
-<body class="app-apex">
-  <header class="top">
-    <a class="back" href="/">‹ Tüm uygulamalar</a>
-    <a class="lang" href="/apex-echo/" lang="en" hreflang="en">English</a>
-  </header>
-  <main>
-    <section class="app-head">
-      <img src="/apex-echo/icon.png" alt="Apex Echo simgesi" width="76" height="76">
-      <div>
-        <p class="app-name">Apex Echo</p>
-        <p class="app-tag">Neon kule tırmanma oyunu</p>
-        <span class="badge">Yakında · iPhone</span>
-      </div>
-    </section>
-    <nav class="tabs" aria-label="Apex Echo">
-      <a href="/apex-echo/tr/" aria-current="page">Tanıtım</a>
-      <a href="/apex-echo/gizlilik/">Gizlilik</a>
-      <a href="/apex-echo/destek/">Destek</a>
-    </nav>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <a class="back" href="/"><svg class="i" viewBox="0 0 256 256" width="18" height="18" aria-hidden="true"><path d="M216 128H40M112 56l-72 72 72 72"/></svg>Tüm uygulamalar</a>
+      <nav class="lang" aria-label="Dil">
+        <a href="/apex-echo/" hreflang="en" lang="en">EN</a>
+        <a href="/apex-echo/tr/" hreflang="tr" aria-current="page">TR</a>
+      </nav>
+    </header>
 
-    <p class="lead">Platformdan platforma zıpla, katları atlayarak combo yap ve düşmeden olabildiğince yükseğe tırman. Aynı kulede en fazla 4 arkadaşınla online yarış: son ayakta kalan kazanır.</p>
+    <main class="tiles">
+      <header class="hero">
+        <span class="deco glow glow-pink g1"></span>
+        <span class="deco glow glow-cyan g2"></span>
+        <span class="deco glow glow-yellow g3"></span>
+        <span class="deco hero-char"></span>
+        <div class="hero-head">
+          <img class="app-icon" src="/apex-echo/icon.png" alt="" width="112" height="112">
+          <span class="status">Yakında</span>
+        </div>
+        <h1>Apex Echo</h1>
+        <p class="hero-tagline">Neon kule tırmanma oyunu</p>
+        <p class="hero-lead">Platformdan platforma zıpla, katları atlayarak combo yap ve düşmeden olabildiğince yükseğe tırman. Aynı kulede en fazla 4 arkadaşınla online yarış: son ayakta kalan kazanır.</p>
+        <p class="hero-note">Yakında iPhone için App Store’da. Oyun dili: İngilizce.</p>
+        <!-- APP STORE BADGE: at launch, replace the .hero-note line above with Apple's official
+             Turkish badge (self-host the SVG next to this page) and drop the "Yakında" tag.
+        <a class="store-badge" href="APP_STORE_URL"><img src="/apex-echo/app-store-badge-tr.svg" alt="App Store'dan İndirin" width="144" height="48"></a>
+        -->
+        <nav class="tabs" aria-label="Apex Echo">
+          <a href="/apex-echo/tr/" aria-current="page">Tanıtım</a>
+          <a href="/apex-echo/gizlilik/">Gizlilik</a>
+          <a href="/apex-echo/destek/">Destek</a>
+        </nav>
+      </header>
 
-    <ul class="features">
-      <li><strong>Basit kontroller.</strong> Sol, sağ ve JUMP. JUMP’a basılı tutarsan zıplamaya devam eder.</li>
-      <li><strong>Combo.</strong> Tek zıplamada birkaç kat atlayarak combo yap.</li>
-      <li><strong>2–5 kişilik online yarış.</strong> 6 karakterlik kodla özel oda ya da dünyanın her yerinden oyuncularla Quick Match.</li>
-      <li><strong>Karakterler ve haritalar.</strong> Oynadıkça kazandığın coin’lerle aç.</li>
-      <li><strong>Hesap, reklam ve takip yok.</strong> İlerlemen cihazında kalır.</li>
-    </ul>
+      <!-- SCREENSHOTS: enable when /apex-echo/screens/1.jpg…5.jpg exist
+      <section class="shots" aria-labelledby="shots-title">
+        <h2 class="label" id="shots-title">Ekran görüntüleri</h2>
+        <div class="shots-strip" role="group" aria-labelledby="shots-title" tabindex="0">
+          <figure class="shot"><div class="shot-frame"><img src="/apex-echo/screens/1.jpg" alt="Ana menü" width="1290" height="2796" loading="lazy" decoding="async"></div><figcaption>Ana menü</figcaption></figure>
+          <figure class="shot"><div class="shot-frame"><img src="/apex-echo/screens/2.jpg" alt="Oyun içi" width="1290" height="2796" loading="lazy" decoding="async"></div><figcaption>Oyun içi</figcaption></figure>
+          <figure class="shot"><div class="shot-frame"><img src="/apex-echo/screens/3.jpg" alt="Co-op odası" width="1290" height="2796" loading="lazy" decoding="async"></div><figcaption>Co-op odası</figcaption></figure>
+          <figure class="shot"><div class="shot-frame"><img src="/apex-echo/screens/4.jpg" alt="Sonuç podyumu" width="1290" height="2796" loading="lazy" decoding="async"></div><figcaption>Sonuç podyumu</figcaption></figure>
+          <figure class="shot"><div class="shot-frame"><img src="/apex-echo/screens/5.jpg" alt="Mağaza" width="1290" height="2796" loading="lazy" decoding="async"></div><figcaption>Mağaza</figcaption></figure>
+        </div>
+      </section>
+      -->
 
-    <p class="muted">Yakında iPhone için App Store’da. Oyun dili: İngilizce.</p>
-  </main>
-  <footer>© 2026 Oytun Emre Özmel · <a href="mailto:oytunemre.apps@gmail.com">oytunemre.apps@gmail.com</a></footer>
+      <section aria-labelledby="features-title">
+        <h2 class="sr-only" id="features-title">Özellikler</h2>
+        <ul class="features" role="list">
+          <li class="feature">
+            <span class="chip tint-cyan" aria-hidden="true"><svg class="i" viewBox="0 0 256 256" width="24" height="24"><path d="M128 216V40M56 112l72-72 72 72"/></svg></span>
+            <div class="feature-text">
+              <h3>Basit kontroller</h3>
+              <p>Sol, sağ ve JUMP. JUMP’a basılı tutarsan zıplamaya devam eder.</p>
+            </div>
+          </li>
+          <li class="feature">
+            <span class="chip tint-pink" aria-hidden="true"><svg class="i" viewBox="0 0 256 256" width="24" height="24"><path d="M96 240l16-80-64-24L160 16l-16 80 64 24Z"/></svg></span>
+            <div class="feature-text">
+              <h3>Combo</h3>
+              <p>Tek zıplamada birkaç kat atlayarak combo yap.</p>
+            </div>
+          </li>
+          <li class="feature">
+            <span class="chip tint-yellow" aria-hidden="true"><svg class="i" viewBox="0 0 256 256" width="24" height="24"><circle cx="88" cy="108" r="52"/><path d="M155.4 57.9A52 52 0 1 1 169.5 160M16 197.4a88 88 0 0 1 144 0M169.5 160a87.9 87.9 0 0 1 72 37.4"/></svg></span>
+            <div class="feature-text">
+              <h3>2–5 kişilik online yarış</h3>
+              <p>6 karakterlik kodla özel oda ya da dünyanın her yerinden oyuncularla Quick Match.</p>
+            </div>
+          </li>
+          <li class="feature">
+            <span class="chip tint-cyan" aria-hidden="true"><svg class="i" viewBox="0 0 256 256" width="24" height="24"><path d="M128 32l22 74 74 22-74 22-22 74-22-74-74-22 74-22Z"/></svg></span>
+            <div class="feature-text">
+              <h3>Karakterler ve haritalar</h3>
+              <p>Oynadıkça kazandığın coin’lerle aç.</p>
+            </div>
+          </li>
+          <li class="feature">
+            <span class="chip tint-pink" aria-hidden="true"><svg class="i" viewBox="0 0 256 256" width="24" height="24"><path d="M40 114.8V56a8 8 0 0 1 8-8h160a8 8 0 0 1 8 8v58.8c0 84-71.3 111.8-85.5 116.5a7.5 7.5 0 0 1-5 0C111.3 226.6 40 198.9 40 114.8Z"/><path d="m88 128 24 24 56-56"/></svg></span>
+            <div class="feature-text">
+              <h3>Hesap, reklam ve takip yok</h3>
+              <p>İlerlemen cihazında kalır.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="dev bg-section" aria-labelledby="dev-title">
+        <div class="dev-side">
+          <span class="mono" aria-hidden="true">OE</span>
+          <h2 class="label" id="dev-title">Geliştirici hakkında</h2>
+        </div>
+        <div class="dev-main">
+          <p>Ben Oytun, yazılım mühendisiyim. Bu sayfadaki uygulamaları, telefonundaki uygulamadan arkasındaki sunuculara kadar kendim tasarlayıp geliştiriyorum. Uygulamalarımı sade tutar, her birinin hangi veriyi kullandığını gizlilik politikasında açıkça anlatırım; destek e-postalarını da kendim okuyup yanıtlarım.</p>
+          <ul class="tags" role="list">
+            <li>Yazılım mühendisi</li>
+            <li>Uçtan uca</li>
+            <li>Birebir destek</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot foot-app">
+      <span>© 2026 Oytun Emre Özmel</span>
+      <nav aria-label="Alt menü">
+        <a href="/">Ana sayfa</a>
+        <a href="/apex-echo/gizlilik/">Gizlilik</a>
+        <a href="/apex-echo/destek/">Destek</a>
+      </nav>
+    </footer>
+  </div>
 </body>
 </html>

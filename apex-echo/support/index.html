@@ -4,52 +4,117 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Support · Apex Echo</title>
-  <link rel="icon" href="/apex-echo/icon.png">
+  <meta name="description" content="Help with Apex Echo: how to play, online co-op for 2–5 players and answers to common questions.">
+  <meta name="theme-color" content="#161826">
+  <link rel="icon" href="/apex-echo/icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="/apex-echo/icon.png">
+  <link rel="alternate" hreflang="en" href="https://oytunemre.github.io/apex-echo/support/">
   <link rel="alternate" hreflang="tr" href="https://oytunemre.github.io/apex-echo/destek/">
+  <link rel="preload" href="/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/nocturne.css">
   <link rel="stylesheet" href="/style.css">
 </head>
-<body class="app-apex">
-  <header class="top">
-    <a class="back" href="/">‹ All apps</a>
-    <a class="lang" href="/apex-echo/destek/" lang="tr" hreflang="tr">Türkçe</a>
-  </header>
-  <main>
-    <section class="app-head">
-      <img src="/apex-echo/icon.png" alt="Apex Echo icon" width="76" height="76">
-      <div>
-        <p class="app-name">Apex Echo</p>
-        <p class="app-tag">Neon tower-climbing jumper</p>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <a class="back" href="/"><svg class="i" viewBox="0 0 256 256" width="18" height="18" aria-hidden="true"><path d="M216 128H40M112 56l-72 72 72 72"/></svg>All apps</a>
+      <nav class="lang" aria-label="Language">
+        <a href="/apex-echo/support/" hreflang="en" aria-current="page">EN</a>
+        <a href="/apex-echo/destek/" hreflang="tr" lang="tr">TR</a>
+      </nav>
+    </header>
+
+    <main>
+      <header class="app-bar">
+        <img class="app-icon" src="/apex-echo/icon.png" alt="" width="64" height="64">
+        <div class="app-bar-name">
+          <p class="app-bar-title">Apex Echo</p>
+          <p class="app-bar-tagline">Neon tower-climbing jumper</p>
+        </div>
+        <nav class="tabs" aria-label="Apex Echo">
+          <a href="/apex-echo/">Overview</a>
+          <a href="/apex-echo/privacy/">Privacy</a>
+          <a href="/apex-echo/support/" aria-current="page">Support</a>
+        </nav>
+      </header>
+
+      <h1 class="sr-only">Support</h1>
+
+      <div class="support-grid">
+        <section class="help bg-section" aria-labelledby="help-title">
+          <h2 class="label" id="help-title">Contact</h2>
+          <p class="help-q">Need help or found a bug?</p>
+          <p class="help-text">Email us at <a href="mailto:oytunemre.apps@gmail.com">oytunemre.apps@gmail.com</a>. We usually reply within a few days.</p>
+          <a class="btn btn-primary pill pill-block help-btn" href="mailto:oytunemre.apps@gmail.com?subject=Apex%20Echo%20support"><svg class="i" viewBox="0 0 256 256" width="20" height="20" aria-hidden="true"><path d="M32 56h192v136a8 8 0 0 1-8 8H40a8 8 0 0 1-8-8Z"/><path d="m224 56-96 88-96-88"/></svg>oytunemre.apps@gmail.com</a>
+        </section>
+
+        <section class="howto" aria-labelledby="howto-title">
+          <h2 class="label" id="howto-title">How to play</h2>
+          <ol class="steps" role="list">
+            <li><span class="chip tint-cyan" aria-hidden="true">1</span><span class="step-text">Use the left and right buttons to move and <strong>JUMP</strong> to leap from platform to platform.</span></li>
+            <li><span class="chip tint-pink" aria-hidden="true">2</span><span class="step-text">Hold JUMP to keep jumping automatically, and tap it again to stop.</span></li>
+            <li><span class="chip tint-yellow" aria-hidden="true">3</span><span class="step-text">Skip several floors in one jump to build a combo.</span></li>
+            <li><span class="chip tint-cyan" aria-hidden="true">4</span><span class="step-text">Climb as high as you can before you fall off the screen.</span></li>
+          </ol>
+        </section>
+
+        <section class="coop" aria-labelledby="coop-title">
+          <h2 class="label" id="coop-title">Co-op (2–5 players)</h2>
+          <ul class="coop-list" role="list">
+            <li>
+              <span class="chip tint-cyan" aria-hidden="true"><svg class="i" viewBox="0 0 256 256" width="20" height="20"><circle cx="88" cy="108" r="52"/><path d="M155.4 57.9A52 52 0 1 1 169.5 160M16 197.4a88 88 0 0 1 144 0M169.5 160a87.9 87.9 0 0 1 72 37.4"/></svg></span>
+              <p><strong>Play with friends:</strong> one player creates a room and shares the 6-character room code. The others join by entering the code. The host taps <strong>START</strong> once 2 or more players are in. A full room of 5 starts automatically.</p>
+            </li>
+            <li>
+              <span class="chip tint-pink" aria-hidden="true"><svg class="i" viewBox="0 0 256 256" width="20" height="20"><path d="M96 240l16-80-64-24L160 16l-16 80 64 24Z"/></svg></span>
+              <p><strong>Quick Match:</strong> matches you with other players from around the world.</p>
+            </li>
+            <li>
+              <span class="chip tint-yellow" aria-hidden="true"><svg class="i" viewBox="0 0 256 256" width="20" height="20"><path d="M72 48h112v56a56 56 0 0 1-112 0Z"/><path d="M72 72H40v16a32 32 0 0 0 32 32M184 72h32v16a32 32 0 0 1-32 32M128 160v48M88 208h80"/></svg></span>
+              <p><strong>Winning:</strong> the last player standing wins. If everyone falls, the highest climber wins. Only the winner earns coins.</p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="faq" aria-labelledby="faq-title">
+          <div class="faq-side">
+            <h2 class="label" id="faq-title">FAQ</h2>
+            <p class="faq-title">Common questions</p>
+          </div>
+          <div class="faq-list">
+            <details open>
+              <summary>Do I need an internet connection?<svg class="i" viewBox="0 0 256 256" width="20" height="20" aria-hidden="true"><path d="M208 96l-80 80-80-80"/></svg></summary>
+              <p>Only for co-op. Solo play works offline.</p>
+            </details>
+            <details>
+              <summary>My progress disappeared.<svg class="i" viewBox="0 0 256 256" width="20" height="20" aria-hidden="true"><path d="M208 96l-80 80-80-80"/></svg></summary>
+              <p>Progress (best score, coins, unlocked items) is stored only on your device. Deleting the app also deletes it.</p>
+            </details>
+            <details>
+              <summary>“Room not found”.<svg class="i" viewBox="0 0 256 256" width="20" height="20" aria-hidden="true"><path d="M208 96l-80 80-80-80"/></svg></summary>
+              <p>Check the code. A room closes when everyone has left it.</p>
+            </details>
+            <details>
+              <summary>I can’t connect to co-op.<svg class="i" viewBox="0 0 256 256" width="20" height="20" aria-hidden="true"><path d="M208 96l-80 80-80-80"/></svg></summary>
+              <p>Check your internet connection. Some school or office Wi-Fi networks block real-time game connections. Try mobile data.</p>
+            </details>
+            <details>
+              <summary>I left the app during a match and lost.<svg class="i" viewBox="0 0 256 256" width="20" height="20" aria-hidden="true"><path d="M208 96l-80 80-80-80"/></svg></summary>
+              <p>To keep matches fair, a player who leaves the app or loses connection for a few seconds is knocked out.</p>
+            </details>
+          </div>
+        </section>
       </div>
-    </section>
-    <nav class="tabs" aria-label="Apex Echo">
-      <a href="/apex-echo/">Overview</a>
-      <a href="/apex-echo/privacy/">Privacy</a>
-      <a href="/apex-echo/support/" aria-current="page">Support</a>
-    </nav>
+    </main>
 
-    <h1>Support</h1>
-
-    <div class="card">
-      <p><strong>Need help or found a bug?</strong><br>Email us at <a href="mailto:oytunemre.apps@gmail.com">oytunemre.apps@gmail.com</a>. We usually reply within a few days.</p>
-    </div>
-
-    <h2>How to play</h2>
-    <p>Use the left and right buttons to move and <strong>JUMP</strong> to leap from platform to platform. Hold JUMP to keep jumping automatically, and tap it again to stop. Skip several floors in one jump to build a combo. Climb as high as you can before you fall off the screen.</p>
-
-    <h2>Co-op (2–5 players)</h2>
-    <ul>
-      <li><strong>Play with friends:</strong> one player creates a room and shares the 6-character room code. The others join by entering the code. The host taps <strong>START</strong> once 2 or more players are in. A full room of 5 starts automatically.</li>
-      <li><strong>Quick Match:</strong> matches you with other players from around the world.</li>
-      <li><strong>Winning:</strong> the last player standing wins. If everyone falls, the highest climber wins. Only the winner earns coins.</li>
-    </ul>
-
-    <h2>FAQ</h2>
-    <p><strong>Do I need an internet connection?</strong><br>Only for co-op. Solo play works offline.</p>
-    <p><strong>My progress disappeared.</strong><br>Progress (best score, coins, unlocked items) is stored only on your device. Deleting the app also deletes it.</p>
-    <p><strong>“Room not found”.</strong><br>Check the code. A room closes when everyone has left it.</p>
-    <p><strong>I can’t connect to co-op.</strong><br>Check your internet connection. Some school or office Wi-Fi networks block real-time game connections. Try mobile data.</p>
-    <p><strong>I left the app during a match and lost.</strong><br>To keep matches fair, a player who leaves the app or loses connection for a few seconds is knocked out.</p>
-  </main>
-  <footer>© 2026 Oytun Emre Özmel · <a href="/apex-echo/privacy/">Privacy Policy</a></footer>
+    <footer class="foot foot-app">
+      <span>© 2026 Oytun Emre Özmel</span>
+      <nav aria-label="Footer">
+        <a href="/">Home</a>
+        <a href="/apex-echo/privacy/">Privacy</a>
+        <a href="/apex-echo/support/" aria-current="page">Support</a>
+      </nav>
+    </footer>
+  </div>
 </body>
 </html>
